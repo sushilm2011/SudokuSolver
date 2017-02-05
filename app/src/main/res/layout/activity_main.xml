@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudoku Solver"
+            android:padding="5dp"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/Head"/>
+
+    <LinearLayout
+        android:id="@+id/sudokuBoard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:layout_marginBottom="5dp"/>
+    <LinearLayout
+        android:id="@+id/numberPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <!--<Button
+
+            android:id="@+id/set"
+            android:background="@color/buttonColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:elevation="10dp"/>-->
+        <Button
+            android:id="@+id/reset"
+            android:background="@color/buttonColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:elevation="10dp"/>
+        <Button
+            android:id="@+id/solve"
+            android:background="@color/buttonColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solve"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:elevation="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
